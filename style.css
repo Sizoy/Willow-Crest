@@ -1,0 +1,114 @@
+/*
+heigth: 900px
+width 1600px
+height heading 80px
+width heading 250px
+    width p1 = 1150px
+    heigth p1 180px
+    width p2 = 1150px
+    heigth p2 140px
+    width p3 = 1150px
+    heigth p3 130px
+    width p4 = 1150px
+    heigth p4 80px
+
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83vw;
+    height: 85vh;
+    box-shadow: 0 0 3vw rgba(0,0,0,0.2);
+}
+p {
+    width: 72vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+p:nth-of-type(1) {
+    height: 9vh;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 5vh;
+}
+p:nth-of-type(2)::first-letter {
+    font-size: 12vh;    
+    font-family: "Playfair Display", sans-serif;
+    float: left;
+    margin-top: -3vh;
+    margin-right: 1.5vw;
+    margin-bottom: -3vh;
+    padding: 0;
+    color: black;
+}
+p:nth-of-type(2) {
+    height: 20vh;
+    color: #666666;
+}
+p:nth-of-type(3) {
+    height: 15.5vh;
+    color: #666666;
+}
+p:nth-of-type(4) {
+    height: 14.4vh;
+    color: #666666;
+}
+p:nth-of-type(5) {
+    height: 9vh;
+    color: #666666;
+}
+p:nth-of-type(5) span:first-child {
+    display: block;
+    padding-left: 2vw;
+    margin-top: -4vh;
+    font-size: 10vh;
+    font-weight: 500;
+    color: #666666;
+    
+}
+p:nth-of-type(5) i {
+    display: block;
+    padding-left: 5vw;
+    margin-top: -7vh;
+    font-weight: 500;
+    color: #666666;
+}
+button {
+    width: 20%;
+    height: 10%;
+    border: 1px solid #eaa258;
+    align-self: flex-start;
+    margin-left: 5vw;
+    background-color: white;
+    color: #eaa258;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border: 1px solid white;
+    background-color: #eaa258;
+    color: white;
+    letter-spacing: 0.5vw;
+    width: 22%;
+    height: 12%;
+    transition-duration: .5s;
+}
